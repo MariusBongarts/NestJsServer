@@ -15,10 +15,4 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-
-  @Post('/register')
-  async register(@Body() userDto: CreateUserDto) {
-    const createdUser = await this.usersService.create(userDto);
-    return createdUser;
-  }
 }

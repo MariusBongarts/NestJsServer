@@ -12,7 +12,7 @@ export class UsersController {
 
     }
 
-    @Post()
+    @Post('/register')
     async create(@Body() createUserDto: CreateUserDto) {
         return await this.usersService.create(createUserDto);
     }
@@ -21,8 +21,7 @@ export class UsersController {
     // to access the route
     @Get('test')
     @UseGuards(AuthGuard())
-    testAuthRoute(){
-        this.usersService.testConfig();
+    testAuthRoute() {
         return {
             message: 'You did it!'
         }

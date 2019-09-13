@@ -22,8 +22,4 @@ export class UsersService {
 
   }
 
-  testConfig() {
-    console.log(this.configService.get('MONGODB_URI'))
-  }
-
 }
