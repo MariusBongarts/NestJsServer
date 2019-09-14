@@ -1,0 +1,6 @@
+Step 1: Rename this file to either dev.env or prod.env
+Step 2: Enter required fields
+Step 3: Delete these 3 step instructions
+
+MONGODB_URI = mongodb+srv://Marius:marius@cluster0-hfhor.mongodb.net/webMarker
+JWT_KEY= MyFuckingSecretJwtKey
